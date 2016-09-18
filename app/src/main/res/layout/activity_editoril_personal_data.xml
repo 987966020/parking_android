@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_ground_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/editoril_personal_data_title"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_editoril_material_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_whrit" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <hbie.vip.parking.ui.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/editoril_material_head" />
+            <include layout="@layout/editoril_material_name" />
+            <include layout="@layout/editoril_material_phone" />
+            <include layout="@layout/editoril_material_sex" />
+            <include layout="@layout/editoril_material_city" />
+            <include layout="@layout/editoril_save" />
+
+            <!--<include layout="@layout/editoril_material_city" />-->
+
+            <!--<include layout="@layout/editoril_material_gender" />-->
+
+            <!--<include layout="@layout/editoril_material_company" />-->
+
+            <!--<include layout="@layout/editoril_material_post" />-->
+
+            <!--<include layout="@layout/editoril_material_phone" />-->
+
+            <!--<include layout="@layout/editoril_material_work" />-->
+
+        </LinearLayout>
+    </hbie.vip.parking.ui.ReboundScrollView>
+
+</LinearLayout>

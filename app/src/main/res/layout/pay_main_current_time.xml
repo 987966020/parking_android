@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:id="@+id/pay_current_parking"
+    android:background="@color/title_color"
+    android:layout_weight="1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_pay_cartime_text"
+            android:textColor="@color/btn_gray_pressed_status"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dip"
+            />
+        <TextView
+            android:id="@+id/tv_pay_current_carparking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_pay_cartime_text"
+            android:textSize="18sp"
+            android:layout_marginRight="18dip"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/btn_gray_normal"
+        />
+</RelativeLayout>
+

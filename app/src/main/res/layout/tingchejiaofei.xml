@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_bg_color"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/whilte"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/up_jiantou"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_exit"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_yonghu" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/add_announcement"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_weixin" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_car_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_qiche" />
+
+            <TextView
+                android:id="@+id/tv_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_car_logo"
+                android:text="大众POLO"
+                android:textColor="#ffb116" />
+
+            <TextView
+                android:id="@+id/tv_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_car_logo"
+                android:text="鲁F38294"
+                android:textColor="#ffb116" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_car_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="万达停车场 地下2层 B区-K12"
+            android:textColor="@color/title_bg_color" />
+
+        <TextView
+            android:id="@+id/tv_car_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="2016/3/24 14:25 入库"
+            android:textColor="@color/title_bg_color" />
+
+        <TextView
+            android:id="@+id/tv_car_time_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="当前停车时间累积2:10"
+            android:textColor="@color/title_bg_color" />
+
+        <TextView
+            android:id="@+id/tv_car_spend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="费用累计25元"
+            android:textColor="@color/title_bg_color" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_wait_pay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_weijiaofei"/>
+        <TextView
+            android:id="@+id/tv_wait_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_wait_pay"
+            android:text="未缴费账单"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></ListView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_wait_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鲁F38294" />
+        <TextView
+            android:id="@+id/tv_car_wait_location"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/tv_wait_car_number"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="芝罘区xxxxxxxxx停车场"/>
+        <TextView
+            android:id="@+id/tv_car_all_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="#ffb116"
+            android:text="¥30.00"/>
+        <TextView
+            android:id="@+id/tv_car_wait_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wait_car_number"
+            android:layout_marginTop="10dp"
+            android:text="周一 03/12 14:35-16:17"/>
+        <TextView
+            android:id="@+id/tv_car_wait_spent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_wait_time"
+            android:layout_marginTop="10dp"
+            android:text="停车10小时,每小时3元"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/title_bg_color"
+            android:text="支付"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_car_all_pay"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_wait_car_number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鲁F38294" />
+        <TextView
+            android:id="@+id/tv_car_wait_location2"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/tv_wait_car_number2"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="芝罘区xxxxxxxxx停车场"/>
+        <TextView
+            android:id="@+id/tv_car_all_pay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="#ffb116"
+            android:text="¥30.00"/>
+        <TextView
+            android:id="@+id/tv_car_wait_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_wait_car_number2"
+            android:layout_marginTop="10dp"
+            android:text="周一 03/12 14:35-16:17"/>
+        <TextView
+            android:id="@+id/tv_car_wait_spent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_car_wait_time2"
+            android:layout_marginTop="10dp"
+            android:text="停车10小时,每小时3元"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/title_bg_color"
+            android:text="支付"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_car_all_pay2"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/title_bg_color"
+        android:text="一键支付(380元)"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"/>
+</LinearLayout>

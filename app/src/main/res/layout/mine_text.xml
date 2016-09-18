@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="关于我们"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_editoril_material_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_whrit" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="\t\t智能停车是一款运用“互联网+停车”理念解决城市停车难题的综合服务平台，为用户提供时尚便捷的停车体验，有效地解决停车难、停车烦的问题。"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/texttwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="\t\t智能停车的三大智慧："
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/textthird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="\t\t\t\t1、全视频智慧停车场"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/textfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:text="\t\t\t\t2、基于手机APP的城市停车诱导系统"
+            />
+        <TextView
+            android:id="@+id/textfive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\t3、便捷的自助寻车与在线缴费"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="福建瀚邦信息工程有限公司"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        />
+    </RelativeLayout>
+</LinearLayout>

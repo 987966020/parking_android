@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+       <RelativeLayout
+           android:layout_width="50dp"
+           android:layout_height="match_parent"
+           >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:background="@drawable/ic_jiahaoyou"
+               />
+           </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/main_menu_title"
+            android:textColor="@color/whilte"
+            android:textSize="20sp" />
+
+        <hbie.vip.parking.button.WaveView
+            android:id="@+id/up_jiahaoyou"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/btn_exit"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_jiahaoyou" />
+        </hbie.vip.parking.button.WaveView>
+
+        <ImageView
+            android:id="@+id/add_announcement"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_weixin" />
+    </RelativeLayout>
+    <hbie.vip.parking.ui.ReboundScrollView
+        android:id="@+id/sll_view_imformation_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_view"
+        android:scrollbars="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/title_color"
+            android:orientation="vertical"
+            android:paddingBottom="50dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/btn_white_normal"
+        android:layout_height="@dimen/activity_car_height">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <ImageView
+                android:id="@+id/iv_car_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/car_click"
+                />
+            <!--android:contentDescription="" -->
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tv_car_current_info"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="大众 辉腾 京B88888"
+            android:textSize="@dimen/activity_size_20"
+            android:textColor="@color/item_pay_text_color" />
+
+    </LinearLayout>
+    <include layout="@layout/show_current_car_park" />
+    <include layout="@layout/show_current_car_time" />
+    <include layout="@layout/show_current_car_timelong" />
+    <include layout="@layout/show_current_car_money" />
+            <hbie.vip.parking.button.RevealButton
+                android:id="@+id/btn_login_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/btn_green"
+                android:text="@string/pay"
+                android:textColor="@color/title_color"
+                android:textSize="22sp" />
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:padding="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_wait_pay"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:src="@drawable/ic_weijiaofei"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_wait_pay"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@id/iv_wait_pay"-->
+            <!--android:text="未缴费账单"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"/>-->
+        <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="1dip"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/view_color" />-->
+    <!--</RelativeLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_height="match_parent"-->
+        <!-->-->
+    <!--<ListView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/orderlist_listview"-->
+        <!--/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/lv_comprehensive_nullimage"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:background="@drawable/kongkatong"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+        </LinearLayout>
+    </hbie.vip.parking.ui.ReboundScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editor_save"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:layout_gravity="center_vertical" >
+    <hbie.vip.parking.button.RevealButton
+        android:id="@+id/btn_save_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_green"
+        android:text="@string/save"
+        android:textColor="@color/title_color"
+        android:textSize="22sp" />
+
+</RelativeLayout>

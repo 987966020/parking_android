@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_ground_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/personal_data_menu_title"
+            android:textColor="@color/title_color"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_personal_data_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_whrit" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_personal_data_edit"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/edit_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <hbie.vip.parking.ui.ReboundScrollView
+        android:id="@+id/scrollView_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:gravity="center"
+                android:paddingTop="20dip" >
+
+                <hbie.vip.parking.ui.RoundImageView
+                    android:id="@+id/iv_personal_data_head"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/default_square" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_data_ka"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/iv_personal_data_head"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_ka" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:gravity="center"
+                android:paddingTop="20dip" >
+
+                <TextView
+                    android:id="@+id/tv_personal_data_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_fragment_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/iv_personal_data_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dip"
+                    android:src="@drawable/icon_woman" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:gravity="center"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/tv_personal_data_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dip"
+                    android:text="@string/me_fragment_company"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_personal_data_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:text="@string/me_fragment_position"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:gravity="center"
+                android:paddingBottom="20dip"
+                android:paddingTop="5dip" >
+
+                <ImageView
+                    android:id="@+id/iv_personal_data_city"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/icon_city" />
+
+                <TextView
+                    android:id="@+id/tv_personal_data_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/me_fragment_city"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </hbie.vip.parking.ui.ReboundScrollView>
+
+</LinearLayout>

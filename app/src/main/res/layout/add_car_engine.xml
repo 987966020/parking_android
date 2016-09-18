@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editoril_material_city"
+    android:layout_width="fill_parent"
+    android:layout_height="44dip"
+    android:layout_gravity="center_vertical"
+    android:background="@color/title_color" >
+
+    <TextView
+        android:id="@+id/tv_add_car_engine_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dip"
+        android:text="@string/add_car_data_engine"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_add_car_engine_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/tv_add_car_engine_text"
+        android:background="@null"
+        android:inputType="phone" >
+    </EditText>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/view_color"
+        android:layout_height="1dp">
+    </RelativeLayout>
+</RelativeLayout>

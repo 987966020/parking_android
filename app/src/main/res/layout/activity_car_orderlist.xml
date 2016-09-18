@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/btn_white_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/pay_menu_title"
+            android:textColor="@color/whilte"
+            android:textSize="20sp" />
+
+        <hbie.vip.parking.button.WaveView
+            android:id="@+id/relativeLayout_find_order_back"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/add_car"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/back_whrit" />
+        </hbie.vip.parking.button.WaveView>
+        <!--<ImageView-->
+        <!--android:id="@+id/add_car"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/title_img" />-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <hbie.vip.parking.ui.list.PullToRefreshListView
+            android:id="@+id/lv_comprehensive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_color"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="none" >
+        </hbie.vip.parking.ui.list.PullToRefreshListView>
+        <ImageView
+            android:id="@+id/lv_comprehensive_nullimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/kongkatong"
+            android:visibility="gone"
+            />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/yijianzhifu_normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

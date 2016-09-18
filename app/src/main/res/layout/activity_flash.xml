@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/qidong" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_flash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/welcome_point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/welcome_point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/welcome_point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/welcome_point" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_flash"
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:background="@drawable/btn_green"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="立即体验"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

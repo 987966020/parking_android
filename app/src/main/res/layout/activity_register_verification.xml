@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_ground_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_color"
+            android:gravity="center"
+            android:text="@string/register_title"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_register_verification_back"
+            android:layout_width="45dip"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="5dip" >
+
+                <hbie.vip.parking.ui.RoundImageView
+                    android:id="@+id/iv_resister_name_head"
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/avatar_man" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dip"
+                android:layout_height="45dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical" >
+                <RadioGroup
+                    android:id="@+id/radioGroup_editoril_material_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/btn_register_name_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio"
+                        android:gravity="center"
+                        android:text="男"
+                        android:paddingLeft="10dip"
+                        android:checked="false"
+                        android:layout_marginLeft="10dip" />
+
+                    <RadioButton
+                        android:id="@+id/btn_register_name_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="17.33dp"
+                        android:layout_toRightOf="@+id/btn_register_name_man"
+                        android:button="@drawable/radio"
+                        android:gravity="center"
+                        android:text="女"
+                        android:paddingLeft="10dip"  />
+                </RadioGroup>
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/view_color" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/tv_register_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/et_register_name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_set_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dip"
+                    android:layout_toRightOf="@id/tv_register_name_title"
+                    android:background="@null">
+
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_register_set_carid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/et_set_cardid"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_set_carid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dip"
+                    android:layout_toRightOf="@id/tv_register_set_carid"
+                    android:inputType="number"
+                    android:background="@null">
+
+                </EditText>
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/view_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_register_set_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/et_set_address"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_set_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dip"
+                    android:layout_toRightOf="@id/tv_register_set_address_title"
+                    android:background="@null">
+
+                </EditText>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/view_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical" >
+                <TextView
+                    android:id="@+id/tv_register_verification_country_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tv_register_verification_country_code"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_register_verification_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dip"
+                    android:layout_toRightOf="@id/tv_register_verification_country_title"
+                    android:background="@null"
+                    android:hint="@string/et_register_phone"
+                    android:inputType="phone" >
+
+                </EditText>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/view_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@color/title_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/tv_register_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/tv_register_verification"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/et_register_verification_code"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/tv_register_verification_get"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:text="@string/tv_register_verification_obtian"
+                    android:textColor="@color/title_color"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/et_register_set_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:hint="@string/et_set_password"
+                    android:paddingLeft="10dip"
+                    android:inputType="textPassword"
+                    android:textSize="18sp" >
+                </EditText>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/view_color" />
+
+                <EditText
+                    android:id="@+id/et_register_set_password_affirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/white"
+                    android:ems="10"
+                    android:paddingLeft="10dip"
+                    android:inputType="textPassword"
+                    android:hint="@string/et_set_password_affirm"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register_verification_next"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="18dip"
+                android:layout_marginRight="18dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/btn_green"
+                android:text="@string/register"
+                android:textColor="@color/title_color"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--app:tabIndicatorColor="#1ed15a"-->
+    <!--app:tabSelectedTextColor="#1ed15a"-->
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@drawable/btn_selector"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radio_pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@drawable/btn_selector"
+            android:text="未缴费"
+            android:drawableLeft="@drawable/ic_yiijiaofei"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:checked="true"
+            android:focusable="true"
+            />
+        <RadioButton
+            android:id="@+id/radio_unpay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="未缴费"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_weijiaofei"
+            android:button="@null"
+            android:background="@drawable/btn_selector"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f4f4f4"
+        ></FrameLayout>
+
+    <hbie.vip.parking.main.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </hbie.vip.parking.main.NoScrollViewPager>
+</LinearLayout>

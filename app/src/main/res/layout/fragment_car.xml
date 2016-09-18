@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/btn_white_normal"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="车辆"
+            android:textColor="@color/whilte"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:id="@+id/up_jiantou"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:gravity="center"></RelativeLayout>
+        <hbie.vip.parking.button.WaveView
+            android:id="@+id/add_car"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_tianjiacheliang"
+                />
+        </hbie.vip.parking.button.WaveView>
+    </RelativeLayout>
+    <!--<include layout="@layout/drive_car_current" />-->
+    <!--<include layout="@layout/drive_car_garage_title"/>-->
+    <hbie.vip.parking.ui.list.PullToRefreshListView
+        android:id="@+id/lv_comprehensive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_color"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="none" >
+    </hbie.vip.parking.ui.list.PullToRefreshListView>
+</LinearLayout>

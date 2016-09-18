@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_ground_color"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/green"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/me_menu_title"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tv_fragmentfirstpage_title"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="#FFFFFF">
+        <hbie.vip.parking.ui.RoundImageView
+            android:id="@+id/iv_me_fragment_head"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/default_square" />
+        <ImageView
+            android:id="@+id/img_me_useravatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/iv_me_fragment_head"
+            android:src="@drawable/ic_yonghu"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赵杭亮"
+            android:layout_toRightOf="@+id/img_me_useravatar"
+            android:layout_marginTop="15dp"
+            android:textSize="17dp"
+            android:textColor="#444444"
+            android:id="@+id/tv_fragmentmine_name"
+            />
+        <!--()里的内容需要引入数据，重新添加数据-->
+        <ImageView
+            android:id="@+id/img_me_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@+id/tv_fragmentmine_name"
+            android:layout_toRightOf="@+id/iv_me_fragment_head"
+            android:src="@drawable/ic_shouji"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18653503680"
+            android:layout_toRightOf="@+id/img_me_phone"
+            android:layout_below="@+id/tv_fragmentmine_name"
+            android:layout_marginTop="9dp"
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:id="@+id/tv_fragmentmine_phone"
+            />
+        <ImageView
+            android:id="@+id/img_me_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="14dp"
+            android:layout_below="@+id/tv_fragmentmine_phone"
+            android:layout_toRightOf="@+id/iv_me_fragment_head"
+            android:src="@drawable/ic_weizhi"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="北京市朝阳区"
+            android:layout_toRightOf="@+id/img_me_location"
+            android:layout_below="@+id/tv_fragmentmine_phone"
+            android:layout_marginTop="12dp"
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_me_fragment_position"
+            android:singleLine="true"
+
+            />
+        <ImageView
+            android:id="@+id/iv_me_fragment_editer"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            android:contentDescription="@string/app_name"
+            android:padding="10dip"
+            android:src="@drawable/ic_xiugai"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+    </LinearLayout>
+    <hbie.vip.parking.ui.ReboundScrollView
+        android:id="@+id/scrollView_activity_me"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dip"
+            android:orientation="vertical" >
+
+
+            <!--<include layout="@layout/me_card" />-->
+            <include layout="@layout/me_safe"/>
+            <include layout="@layout/me_clear" />
+            <include layout="@layout/me_upgrade" />
+            <include layout="@layout/me_mine" />
+            <include layout="@layout/me_quit" />
+
+
+        </LinearLayout>
+    </hbie.vip.parking.ui.ReboundScrollView>
+</LinearLayout>

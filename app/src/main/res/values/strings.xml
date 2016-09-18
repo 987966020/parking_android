@@ -1,0 +1,181 @@
+<resources>
+    <string name="app_name">智能停车</string>
+    <string name="action_settings">Settings</string>
+    <!-- LoginActivity -->
+    <integer name="versioncode">11</integer>
+    <string name="versionname">1.1</string>
+    <string name="login">登 录</string>
+    <string name="quit">退 出</string>
+    <string name="save">保 存</string>
+    <string name="pay">离场支付</string>
+    <string name="areaCode">+86</string>
+    <string name="password">密码</string>
+    <string name="register_ask">你还没有账号？</string>
+    <string name="register">立即注册</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <!-- ResigterForVerificationActivity -->
+    <string name="tv_register_verification_country">国家和地区</string>
+    <string name="tv_register_verification_country_code">+86</string>
+    <string name="tv_register_verification_phone">手机号</string>
+    <string name="tv_register_verification">验证码</string>
+    <string name="tv_register_verification_obtian">获取验证码</string>
+    <!-- ResigterForSetPasswordActivity -->
+    <string name="set_password_title">设置密码</string>
+    <string name="et_set_password">新密码</string>
+    <string name="et_set_password_affirm">重复密码</string>
+    <string name="et_set_cardid">身份证</string>
+    <string name="et_set_address">地 址</string>
+    <string name="btn_set_password_submit">完成</string>
+    <!-- ResetPasswordActivity -->
+    <string name="reset_password_title">重置密码</string>
+    <!-- AddPersonalDataActivity -->
+    <string name="add_personal_data_title">资料完善</string>
+    <string name="add_personal_data_submit">全部完善</string>
+    <!-- RegisterForNameActivity -->
+    <string name="register_title">注册</string>
+    <string name="service">《隐私政策》 &amp;《服务协议》</string>
+    <string name="register_name_next">下一步</string>
+    <string name="et_register_name">姓名</string>
+    <string name="et_register_phone">请输入手机号码</string>
+    <string name="tv_register_city">所在城市</string>
+    <string name="service_next">点击“下一步”表示你同意</string>
+    <!-- InformationFragment -->
+    <string name="information_menu_title">首页</string>
+    <string name="show_car_park_title">当前位置</string>
+    <string name="show_car_time_title">入库时间</string>
+    <string name="show_car_timelong_title">累计时长</string>
+    <string name="show_car_money_title">累计费用</string>
+    <string name="main_menu_title">首页</string>
+    <!-- FindFragment -->
+    <string name="find_menu_title">车辆</string>
+    <!-- NewsFragment -->
+    <string name="news_menu_title">缴费</string>
+    <!-- PayFragment -->
+    <string name="pay_menu_title">缴费信息</string>
+    <!-- MeFragment -->
+    <string name="me_menu_title">更多</string>
+    <string name="me_tag">个人标签</string>
+    <string name="me_fragment_name">张三</string>
+    <string name="me_fragment_company">智慧停车</string>
+    <string name="me_fragment_position">车主</string>
+    <string name="me_fragment_city_text">城市：</string>
+    <string name="me_fragment_city">北京</string>
+    <string name="me_fragment_email_text">邮箱：</string>
+    <string name="me_fragment_email">123456789@qq.com</string>
+    <string name="personal_data_menu_title"> 个人资料</string>
+    <!-- MeFragment -->
+    <string name="me_post_text">职务:</string>
+    <string name="me_add_tag_text">添加标签</string>
+    <string name="me_collect_text">收藏资讯</string>
+    <string name="me_card_text">银行卡信息</string>
+    <string name="me_safe_text">账户安全</string>
+    <string name="me_mine_text">关于我们</string>
+    <string name="me_clear_text">清理缓存</string>
+    <string name="me_notice_text">通知公告</string>
+    <string name="me_upgrade_text">检查升级</string>
+    <string name="me_buildingring_text">动态</string>
+    <string name="me_apply_expert_text">成为餐饮行家</string>
+    <string name="me_setting_text">设置</string>
+    <string name="me_fans_count">粉丝</string>
+    <string name="me_focus_count">关注</string>
+    <string name="me_friend_count">好友</string>
+    <!-- EditorilPersonalDataActivity -->
+    <string name="editoril_personal_data_title">资料编辑</string>
+    <string name="editoril_personal_data_head">头像</string>
+    <string name="editoril_personal_data_name">我的名称</string>
+    <string name="editoril_personal_data_name_hint">提交后不允许更改</string>
+    <string name="editoril_personal_data_other_hint">必填</string>
+    <string name="editoril_personal_data_email">邮箱</string>
+    <string name="editoril_personal_data_city">所在城市</string>
+    <string name="editoril_personal_data_gender">性别</string>
+    <string name="editoril_personal_data_company">公司</string>
+    <string name="editoril_personal_data_position">职位</string>
+    <string name="editoril_personal_data_phone">手机号修改</string>
+    <string name="editoril_personal_data_work_experience">工作经历</string>
+    <string name="editoril_personal_data_add_work_experience">添加工作经历</string>
+    <!-- UpdatePersonalPhoneActivity -->
+    <string name="update_personal_phone_title">修改手机号</string>
+    <string name="update_personal_phone_current">当前手机号:</string>
+    <string name="update_personal_phone_remind">变更后个人信息与密码不变</string>
+    <string name="update_personal_phone_submit">更换完成</string>
+    <!--AddCarActivity-->
+    <string name="add_car_title">添加车辆</string>
+    <string name="add_car_data_number">车牌号</string>
+    <string name="add_car_data_brand">车品牌</string>
+    <string name="add_car_data_type">车类型</string>
+    <string name="add_car_data_engine">发动机编码</string>
+    <string name="update_car_title">编辑车辆</string>
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">下拉可以刷新</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="xsearch_loading">正在加载中…</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉可以加载</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后加载</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+    <!-- UpdatePersonalCityIdActivity -->
+    <string name="update_personal_city_title">修改城市</string>
+    <string name="update_personal_city_text">请选择省市区</string>
+    <string name="update_personal_city_submit">提交</string>
+    <!-- UpdatePersonalNameActivity -->
+    <string name="update_personal_name_title">修改姓名</string>
+    <string name="update_personal_name_submit">提交</string>
+    <!--BankCart-->
+    <string name="bankcart_title_text">银行卡</string>
+    <string name="btn_add_bank_cart">添加</string>
+    <!--AddCartActivity-->
+    <string name="btn_add_bankcart_text">添加银行卡</string>
+    <string name="tv_add_bankcart_text">请绑定持卡人本人的银行卡</string>
+    <string name="tv_add_bankname_text">银行名称</string>
+    <string name="et_add_bankname_text">请输入银行名称</string>
+    <string name="tv_add_subbranch_name_text">支行名称</string>
+    <string name="et_add_subbranch_name_text">请输入支行名称</string>
+    <string name="tv_add_cart_name_text">账号名称</string>
+    <string name="et_add_cart_name_text">请输入账号名称</string>
+    <string name="tv_add_cart_number_text">银行卡号</string>
+    <string name="et_add_cart_number_text">请输入银行卡号</string>
+    <string name="finish">完成</string>
+    <string name="te_visible_add_card">请添加用户银行卡</string>
+    <string name="tv_current_car_type">当前车辆</string>
+    <string name="tv_current_car_change_type">当前车辆</string>
+    <array name="dialog_add_car_type">
+        <item>驾驶车辆</item>
+        <item>常用车辆</item>
+    </array>
+    <!-- PayActivity-->
+    <string name="tv_pay_text">支付</string>
+    <string name="tv_pay_money_text">￥12</string>
+    <string name="tv_money_total">费用累计</string>
+    <string name="tv_pay_current_car_text">缴费车辆:</string>
+    <string name="tv_weixin_text">微信支付</string>
+    <string name="tv_zhifubao_text">支付宝支付</string>
+    <string name="tv_yinhangka_text">银行卡支付</string>
+    <string name="btn_sure_pay_text">确认支付</string>
+    <string name="tv_pay_cartype_text">缴费车辆</string>
+    <string name="tv_pay_carparking_text">停车位置</string>
+    <string name="tv_pay_cartime_text">时间累计</string>
+    <!-- ReplaceCarFareActivity-->
+    <string name="tv_replace_car_fare">车费代缴</string>
+    <string name="et_search_replace_car_Num">查询请输入车牌号</string>
+    <string name="tv_null_message">请添加车辆</string>
+    <!--OserMessage-->
+    <string name="tv_title_order">详情信息</string>
+    <string name="tv_current_Num_parking">停车位置</string>
+    <string name="tv_current_Num_intime_title">入库时间</string>
+    <string name="tv_current_Num_outtime_title">出库时间</string>
+    <string name="tv_oder_time_accumulate">时间积累</string>
+    <string name="tv_current_Num_Order_title">费用累计</string>
+
+
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+</resources>

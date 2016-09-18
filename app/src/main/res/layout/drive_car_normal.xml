@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <hbie.vip.parking.button.WaveView
+        android:id="@+id/ly_car_info"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_car_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="鲁F8888"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:background="@drawable/ic_qiche"
+            />
+        <TextView
+            android:id="@+id/tv_car_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="170dp"
+            android:text="POLO"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_arrow_right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/iv_car_editor"
+            />
+
+    </hbie.vip.parking.button.WaveView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/view_color"
+        android:layout_height="1dp">
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editoril_material_head"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip"
+    android:layout_gravity="center_vertical"
+    android:layout_marginTop="20dip"
+    android:background="@color/title_color"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_editoril_material_head_text"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="15dip"
+        android:gravity="center_vertical"
+        android:text="@string/editoril_personal_data_head"
+        android:textSize="18sp" />
+
+    <hbie.vip.parking.ui.RoundImageView
+        android:id="@+id/iv_editoril_material_head"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dip"
+        android:src="@drawable/regiser_head" />
+35
+</LinearLayout>

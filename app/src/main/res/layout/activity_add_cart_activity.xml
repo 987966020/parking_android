@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/btn_white_normal"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        >
+        <TextView
+            android:id="@+id/tv_add_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_add_bank_cart"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/title_color"
+            android:background="@color/green"
+            />
+        <RelativeLayout
+            android:id="@+id/btn_bankcart_back"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_fanhui_left"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_bankcart_delect"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:text="@string/tv_add_bankcart_text"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:background="@color/btn_white_normal"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <hbie.vip.parking.ui.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+                <include layout="@layout/add_bank_name"/>
+                <include layout="@layout/add_subbranch_name"/>
+                <include layout="@layout/add_cart_name"/>
+                <include layout="@layout/add_cart_number"/>
+                <include layout="@layout/add_bank_message_finish"/>
+            </LinearLayout>
+    </hbie.vip.parking.ui.ReboundScrollView>
+</LinearLayout>
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hbie.vip.parking.button.WaveView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editoril_material_gender"
+    android:layout_width="fill_parent"
+    android:layout_height="100dip"
+    android:layout_gravity="center_vertical"
+    android:background="@color/title_color" >
+    <TextView
+        android:id="@+id/tv_wait_car_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/activity_size_15"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="京B38294" />
+    <TextView
+        android:id="@+id/tv_car_wait_location"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/tv_wait_car_number"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/activity_size_15"
+        android:text="北京市万达停车场"/>
+    <TextView
+        android:id="@+id/tv_car_all_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/activity_size_20"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/item_pay_text_color"
+        android:text="¥30.00"/>
+    <TextView
+        android:id="@+id/tv_car_wait_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wait_car_number"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/activity_size_15"
+        android:layout_marginLeft="10dp"
+        android:text="周一 03/12 14:35-16:17"/>
+    <TextView
+        android:id="@+id/tv_car_wait_spent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_car_wait_time"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="停车2小时,每小时3元"/>
+    <hbie.vip.parking.button.RevealButton
+        android:id="@+id/btn_order_pay"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/green"
+        android:text="支付"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/tv_car_all_pay"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/view_color" />
+</hbie.vip.parking.button.WaveView>
